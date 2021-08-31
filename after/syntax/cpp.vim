@@ -33,6 +33,9 @@
 " Based on the discussion in: http://stackoverflow.com/q/736701
 " -----------------------------------------------------------------------------
 
+" Read the C syntax to start with
+runtime! syntax/c.vim
+
 " Base-on-user-config highlight settings ----------------------------------{{{
 " Class and namespace scope
 if get(g:, 'cpp_class_scope_highlight', 0)
