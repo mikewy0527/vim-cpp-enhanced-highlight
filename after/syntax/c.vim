@@ -303,11 +303,11 @@ hi def link userMacroName cMacro
 hi def link defineKeyword cDefine
 
 " Structure declaration name
-syn region cStructDeclareName start="\%(\<struct\>\)\@<=\_s\+" end=/{\|\:\|;\|</me=e-1
+syn region cStructDeclareName start="\%(\<struct\>\)\@<=\_s\+" end=/\s\|{\|\:\|;\|</me=e-1
            \ contains=cCustomStructure
-syn region cStructDeclareName start="\%(\<union\>\)\@<=\_s\+" end=/{\|\:\|;\|</me=e-1
+syn region cStructDeclareName start="\%(\<union\>\)\@<=\_s\+" end=/\s\|{\|\:\|;\|</me=e-1
            \ contains=cCustomStructure
-syn region cStructDeclareName start="\%(\<enum\>\)\@<=\_s\+" end="{\|\:\|;\|<"me=e-1
+syn region cStructDeclareName start="\%(\<enum\>\)\@<=\_s\+" end="\s\|{\|\:\|;\|<"me=e-1
            \ contains=cCustomStructure
 hi def link cStructDeclareName cStructDeclare
 
